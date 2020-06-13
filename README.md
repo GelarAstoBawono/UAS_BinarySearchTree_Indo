@@ -1,5 +1,5 @@
 # UAS_BinarySearchTree_Indo
-Dibuat dalam Bahasa Indonesia untuk Memudahkan dalam membaca sebuah fungsi/ Line
+Dibuat dalam Bahasa Indonesia untuk Memudahkan dalam membaca sebuah fungsi
 
 ## Hayuuuk Lihat lebih dekat!
 
@@ -16,7 +16,7 @@ Jika Ingin Mengedit code yang ada, bisa kalian buka lewat aplikasi dibawah ini
 
 Untuk Menjalankannya, anda hanya perlu mengunduh UAS_BST.exe yang ada
 ```
-Disclaimer, karena extensionnya adalah .exe maka pengguna IOS selain OS dapat membukanya
+Disclaimer, karena extensionnya adalah .exe maka hanya pengguna Windows yang dapat membukanya,
 dengan membukanya lewat IDE yang dipunya, dan dijalankan secara manual terlebih dahulu
 ```
 
@@ -28,6 +28,7 @@ program ini akan membantu anda dalam:
 ```
 - Memvisualisasikan BST yang ada
 - Mengurutkan BST secara in, pre dan postOrder
+- Menunjukkan value terkecil dan terbesar dalam program
 ```
 
 Berikut beberapa code dan fitur yang ada
@@ -36,27 +37,25 @@ Berikut beberapa code dan fitur yang ada
 ```
 BST* BST :: Insert(BST *root, int value) {
     if(!root) {
-        // Insert the first node, if root is NULL.
+        // Memasukkan data pertama, jika rootnya kosong
         return new BST(value);
     }
 
     // Insert data.
+    // Memasukkan data dengan mengecek nilai dari node yang akan dimasukkan
     if(value > root->data) {
-        // Insert right node data, if the 'value'
-        // to be inserted is greater than 'root' node data.
-
-        // Process right nodes.
+		//Jika lebih besar dari node sebelumnya 
+		//maka akan masuk ke node kanan
         root->right = Insert(root->right, value);
     }
+    
     else{
-        // Insert left node data, if the 'value'
-        // to be inserted is greater than 'root' node data.
-
-        // Process left nodes.
+		//Jika lebih kecil dari node sebelumnya 
+		//maka akan masuk ke node kiri
         root->left = Insert(root->left, value);
     }
-
-    // Return 'root' node, after insertion.
+    
+    // Setelah selesai, maka node yang dimasukkan akan menjadi root
     return root;
 }
 ```
@@ -95,6 +94,33 @@ void BST :: postorderTraversal(BST *root) {
   	postorderTraversal(root->left);
   	postorderTraversal(root->right);
   	cout << root->data << "->";
+}
+```
+- *Menentukan Value Paling besar*
+```
+// Scanning value paling besar
+int BST::maxValue(BST* node){
+    BST* current = node;
+
+	// dengan mencari lewat node paling kanan
+    while (current && current->right != NULL)
+        current = current->right;
+
+    return current->data;
+}
+```
+
+- *Menentukan Value Paling kecil*
+```
+// Scanning value paling kecil
+int BST::minValue(BST* node){
+    BST* current = node;
+
+	// dengan mencari lewat node paling kiri
+    while (current && current->left != NULL)
+        current = current->left;
+
+    return current->data;
 }
 ```
 
