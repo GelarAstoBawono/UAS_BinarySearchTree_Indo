@@ -4,7 +4,7 @@ Dibuat dalam Bahasa Indonesia untuk Memudahkan dalam membaca sebuah fungsi/ Line
 ## Hayuuuk Lihat lebih dekat!
 
 ### Apa yang dibutuhkan?
-Untuk Menjalankan File ini, anda hanya perlu mengunduh file "UAS_BST.exe" nya saja
+Untuk Menjalankan File ini, anda hanya perlu mengunduh file "UAS_BST.exe" nya saja.
 Jika Ingin Mengedit code yang ada, bisa kalian buka lewat aplikasi dibawah ini
 ```
 - DEV C++
