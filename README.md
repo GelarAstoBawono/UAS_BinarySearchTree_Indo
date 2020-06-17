@@ -161,4 +161,4 @@ Berikut adalah tampilan dari program UAS_BST.exe
 Projek ini bersifat open source
 
 ## Terima Kasih Kepada
-* Inspiration (pak DR. Achmad Solichin)
+* Inspiration (Dr. Achmad Solichin, S.Kom., M.T.I)
