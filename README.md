@@ -22,7 +22,7 @@ dengan membukanya lewat IDE yang dipunya, dan dijalankan secara manual terlebih 
 
 ### Hasil Test dan fitur dari program ini
 
-Program ini saya namai BST Visualizer, seperti namanya
+Program ini saya beri nama BST Visualizer, seperti namanya
 program ini akan membantu anda dalam:
 
 ```
@@ -128,6 +128,25 @@ int BST::minValue(BST* node){
 ```
 Expect akan ada error jika dibuka di IDE yang berbeda
 ```
+## Cara menggunakan program
+```
+- Buka program UAS_BST.exe
+- Ketik angka "1" untuk memasukkan angka (memasukan angka secara satu per satu)
+- Ketik angka "2" untuk mencari angka yang telah anda masukan ke dalam BST
+- Ketik angka "3" untuk menghapus angka yang telah anda masukan ke dalam BST
+- Ketik angka "4" untuk menampilkan urutan angka secara Inorder
+- Ketik angka "5" untuk menampilkan urutan angka secara Preorder
+- Ketik angka "6" untuk menampilkan urutan angka secara Postorder
+- Ketik angka "7" untuk menghapus seluruh angka yang telah anda masukan ke dalam BST
+- Ketik angka "8" untuk menampilkan angka terkecil dari angka yang telah anda masukan
+- Ketik angka "9" untuk menampilkan angka terbesar dari angka yang telah anda masukan
+- Ketik angka "0" untuk keluar/close program UAS_BST.exe
+```
+## Tampilan Program
+
+Berikut adalah tampilan dari program UAS_BST.exe
+
+![Screenshot (267)](https://user-images.githubusercontent.com/66856091/84842519-91ab4300-b06f-11ea-98a7-2a143d7fccb4.png)
 
 ## Dibuat Dengan
 
@@ -136,7 +155,7 @@ Expect akan ada error jika dibuka di IDE yang berbeda
 
 
 ## Authors
-* **Gelar Asto Bawono - (1910512034)** 
+* **Gelar Asto Bawono - (1910512034) - asto.bawono@gmail.com** 
 
 ## Lisensi
 Projek ini bersifat open source
